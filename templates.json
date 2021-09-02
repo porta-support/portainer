@@ -11,7 +11,7 @@
             "platform": "linux",
             "logo": "https://git.portaone.com:29999/public/portainer/raw/branch/master/app/PortaBI/PortaBI_logo.png",
             "repository": {
-                "url": "https://git.portaone.com:29999/public/portainer",
+                "url": "https://github.com/porta-support/portainer",
                 "stackfile": "app/PortaBI/docker-stack.yml"
             },
             "env": [
@@ -70,9 +70,9 @@
                 "BillingAdmin Logs"
             ],
             "platform": "linux",
-            "logo": "https://git.portaone.com:29999/public/portainer/raw/branch/master/app/BALogsUI/BALogsUI_logo.png",
+            "logo": "https://raw.githubusercontent.com/porta-support/portainer/main/app/BALogsUI/BALogsUI_logo.png",
             "repository": {
-                "url": "https://git.portaone.com:29999/public/portainer",
+                "url": "https://github.com/porta-support/portainer",
                 "stackfile": "app/BALogsUI/docker-stack.yml"
             },
             "env": [
