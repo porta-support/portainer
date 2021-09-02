@@ -62,7 +62,7 @@
             ]
         },
         {
-            "type": 1,
+            "type": 2,
             "title": "BALogsUI",
             "description": "Grafana interface (open source analytics & monitoring solution), which provides easy access (search, download) to the BillingAdmin logs",
             "note": "Please fill all the fields (like 'Elasticsearch URL') before installing the application",
