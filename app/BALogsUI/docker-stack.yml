@@ -17,6 +17,9 @@ services:
         constraints: [node.labels.node_name.Elasticsearch == true]
     logging:
       driver: local
+    networks:
+      app_net:
+        driver: host
     ports:
       - target: 3000
         published: 3005
