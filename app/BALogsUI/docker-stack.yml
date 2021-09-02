@@ -21,6 +21,6 @@ services:
         tag: ba-logs-ui
     ports:
       - target: 3000
-        published: 3000
+        published: 3005
         protocol: tcp
         mode: host
