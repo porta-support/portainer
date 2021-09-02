@@ -16,9 +16,7 @@ services:
       placement:
         constraints: [node.labels.node_name.Elasticsearch == true]
     logging:
-      driver: syslog
-      options:
-        tag: ba-logs-ui
+      driver: local
     ports:
       - target: 3000
         published: 3005
