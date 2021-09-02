@@ -1,0 +1,50 @@
+version: '3.3'
+
+services:
+  bi-agent:
+    image: registry.portaone.com/porta-bi-ext/bi-agent:latest-prod
+    volumes:
+      - type: volume
+        source: portabi_data
+        target: /data
+      - type: volume
+        source: portabi_logs
+        target: /var/log
+      - type: bind
+        source: ${PATH_TO_ORA_TNSNAMES:-/usr/lib/oracle/19.8/client64/network/admin/tnsnames.ora}
+        target: /usr/lib/oracle/12.1/client64/network/admin/tnsnames.ora
+      - type: bind
+        source: /etc/hosts
+        target: /etc/hosts
+        read_only: true
+    environment:
+      SFTP_URL: ${SFTP_URL}
+      SFTP_LOGIN: ${SFTP_LOGIN}
+      PB_ADMIN_URL: ${PB_ADMIN_URL}
+      DSN: ${DB_DSN}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      I_ENV: ${I_ENV}
+      SSH_KEY: ${SSH_KEY}
+      EXPORT_START_DATE: ''
+      SKIP_ENTITY_PREFIX: zzzPorta
+      SFTP_PARAMS: ''
+      MAX_UPLOAD_RETRIES: 3
+      DBI_TRACE: 0
+      DBI_ROW_CACHE_SIZE: 1000
+      APP_LOG_LEVEL: info
+      APP_HISTORY_EXPORT_INTERVAL: 300
+      EXPORT_DELAY_HOURS: 2
+      EXPORT_MAX_DEBTORS: 100
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints: [node.labels.node_name.PortaAdmin == true]
+    logging:
+      driver: syslog
+      options:
+        tag: bi-agent-${I_ENV}
+volumes:
+  portabi_data:
+  portabi_logs:

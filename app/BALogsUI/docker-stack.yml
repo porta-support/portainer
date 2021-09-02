@@ -1,0 +1,26 @@
+version: '3.3'
+
+services:
+  ba-logs-ui:
+    image: registry.portaone.com/porta-portainer-store/ba-logs-ui:latest-prod
+    healthcheck:
+      test: "curl -s -I -H \"Accept: application/json\"  http://localhost:3000/api/health | grep -q \"200 OK\" && echo \"Grafana health is OK\" || exit 1"
+      interval: 1m
+      timeout: 30s
+      retries: 10
+    environment:
+      ELASTICSEARCH_URL: ${ELASTICSEARCH_URL}
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints: [node.labels.node_name.Elasticsearch == true]
+    logging:
+      driver: syslog
+      options:
+        tag: ba-logs-ui
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+        mode: host

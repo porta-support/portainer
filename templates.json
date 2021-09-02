@@ -1,0 +1,87 @@
+{
+    "version": "2",
+    "templates": [{
+            "type": 2,
+            "title": "PortaBI",
+            "description": "A user-friendly business intelligence tool, analyzing live data and reporting it all in a meaningful way.",
+            "note": "Please fill the fields below before installing the application.",
+            "categories": [
+                "Data Analyze"
+            ],
+            "platform": "linux",
+            "logo": "https://git.portaone.com:29999/public/portainer/raw/branch/master/app/PortaBI/PortaBI_logo.png",
+            "repository": {
+                "url": "https://git.portaone.com:29999/public/portainer",
+                "stackfile": "app/PortaBI/docker-stack.yml"
+            },
+            "env": [
+                {
+                    "name": "SFTP_URL",
+                    "label": "Sftp URL",
+                    "description": "Sftp URL"
+                },
+                {
+                    "name": "SFTP_LOGIN",
+                    "label": "Sftp login",
+                    "description": "Sftp login"
+                },
+                {
+                    "name": "PB_ADMIN_URL",
+                    "label": "Admin URL",
+                    "description": "Porta Billing Admin URL"
+                },
+                {
+                    "name": "DB_DSN",
+                    "label": "DB DSN",
+                    "description": "Database DSN"
+                },
+                {
+                    "name": "DB_USER",
+                    "label": "DB User",
+                    "description": "Database Username"
+                },
+                {
+                    "name": "DB_PASSWORD",
+                    "label": "DB Password",
+                    "description": "Database Password"
+                },
+                {
+                    "name": "I_ENV",
+                    "label": "PB Environment ID",
+                    "description": "Porta Billing Env ID assosiated with the current service"
+                },
+                {
+                    "name": "SSH_KEY",
+                    "label": "SSH Key for sftp connection",
+                    "description": "SSH Key for sftp connection"
+                },
+                {
+                    "name": "PATH_TO_ORA_TNSNAMES",
+                    "label": "Oracle tnsnames path"
+                }
+            ]
+        },
+        {
+            "type": 2,
+            "title": "BALogsUI",
+            "description": "Grafana interface (open source analytics & monitoring solution), which provides easy access (search, download) to the BillingAdmin logs",
+            "note": "Please fill all the fields (like 'Elasticsearch URL') before installing the application",
+            "categories": [
+                "BillingAdmin Logs"
+            ],
+            "platform": "linux",
+            "logo": "https://git.portaone.com:29999/public/portainer/raw/branch/master/app/BALogsUI/BALogsUI_logo.png",
+            "repository": {
+                "url": "https://git.portaone.com:29999/public/portainer",
+                "stackfile": "app/BALogsUI/docker-stack.yml"
+            },
+            "env": [
+                {
+                    "name": "ELASTICSEARCH_URL",
+                    "label": "Elasticsearch URL",
+                    "description": "URL of the Elasticsearch, where BA logs content is stored"
+                }
+            ]
+        }
+    ]
+}
