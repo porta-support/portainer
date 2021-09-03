@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   bi-agent:
-    image: registry.portaone.com/porta-bi-ext/bi-agent:latest-prod
+    image: registry.portaone.com/porta-bi-ext/bi-agent:master-25-01-2021
     volumes:
       - type: volume
         source: portabi_data
@@ -42,9 +42,7 @@ services:
       placement:
         constraints: [node.labels.node_name.PortaAdmin == true]
     logging:
-      driver: syslog
-      options:
-        tag: bi-agent-${I_ENV}
+      driver: local
 volumes:
   portabi_data:
   portabi_logs:
