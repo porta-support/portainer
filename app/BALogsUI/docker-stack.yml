@@ -24,6 +24,3 @@ services:
         published: 3005
         protocol: tcp
         mode: host
-networks:
-    app_net:
-      driver: host
