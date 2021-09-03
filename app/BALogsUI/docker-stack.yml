@@ -3,7 +3,6 @@ version: '3.3'
 services:
   ba-logs-ui:
     image: registry.portaone.com/porta-portainer-store/ba-logs-ui:latest-prod
-    network_mode: host
     volumes:
       - type: bind
         source: /etc/hosts
