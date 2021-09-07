@@ -10,6 +10,8 @@ services:
       retries: 10
     environment:
       ES_NODES: ${ES_NODES}
+      LOGS_CLEANUP_DAYS: ${LOGS_CLEANUP_DAYS}
+      PROCESSING_TIMEOUT: ${PROCESSING_TIMEOUT}
     deploy:
       mode: replicated
       replicas: 1

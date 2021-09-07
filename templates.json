@@ -87,7 +87,7 @@
             "type": 2,
             "title": "BALogsSupervisor",
             "description": "Service for reindexing and removing old BillingAdmin logs, stored in the Elasticsearch",
-            "note": "Please complete all the fields (like 'Elasticsearch Node') before installing the application",
+            "note": "Please complete all the mandatory fields (like 'Elasticsearch Node') before installing the application",
             "categories": [
                 "BillingAdmin Logs"
             ],
@@ -102,6 +102,18 @@
                     "name": "ES_NODES",
                     "label": "Elasticsearch Node",
                     "description": "Elasticsearch master node for a site in the format '<IP_ADDR>:<PORT>'"
+                },
+                {
+                    "name": "LOGS_CLEANUP_DAYS",
+                    "label": "Cleanup after N days",
+                    "description": "Delete logs which were saved more than N days ago",
+                    "default": 50
+                },
+                {
+                    "name": "PROCESSING_TIMEOUT",
+                    "label": "Processing timeout (minutes)",
+                    "description": "Try to delete/reindex logs every N minutes",
+                    "default": 60
                 }
             ]
         }
