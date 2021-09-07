@@ -85,7 +85,7 @@
         },
         {
             "type": 2,
-            "title": "BALogsSupervisor2",
+            "title": "BALogsSupervisor3",
             "description": "Service for reindexing and removing old BillingAdmin logs, stored in the Elasticsearch",
             "note": "Please complete all the mandatory fields (like 'Elasticsearch Node') before installing the application",
             "categories": [
