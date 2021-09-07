@@ -85,7 +85,7 @@
         },
         {
             "type": 2,
-            "title": "BALogsSupervisor1",
+            "title": "BALogsSupervisor2",
             "description": "Service for reindexing and removing old BillingAdmin logs, stored in the Elasticsearch",
             "note": "Please complete all the mandatory fields (like 'Elasticsearch Node') before installing the application",
             "categories": [
@@ -107,13 +107,13 @@
                     "name": "LOGS_CLEANUP_DAYS",
                     "label": "Cleanup after N days",
                     "description": "Delete logs which were saved more than N days ago",
-                    "default": "50"
+                    "default": "3"
                 },
                 {
                     "name": "PROCESSING_TIMEOUT",
                     "label": "Processing timeout (minutes)",
                     "description": "Try to delete/reindex logs every N minutes",
-                    "default": "60"
+                    "default": "1"
                 }
             ]
         }
