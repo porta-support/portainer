@@ -93,7 +93,6 @@
             ],
             "platform": "linux",
             "logo": "https://raw.githubusercontent.com/porta-support/portainer/main/app/BALogsSupervisor/BALogsSupervisor_logo.png",
-            // "logo": "https://git.portaone.com:29999/public/portainer/raw/branch/master/app/BALogsSupervisor/BALogsSupervisor_logo.png",
             "repository": {
                 "url": "https://github.com/porta-support/portainer",
                 "stackfile": "app/BALogsSupervisor/docker-stack.yml"
