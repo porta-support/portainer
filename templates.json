@@ -82,6 +82,28 @@
                     "description": "The URL of the Elasticsearch instance where BA logs data is stored"
                 }
             ]
+        },
+        {
+            "type": 2,
+            "title": "BALogsSupervisor",
+            "description": "Service for reindexing and removing old BillingAdmin logs, stored in the Elasticsearch",
+            "note": "Please complete all the fields (like 'Elasticsearch Node') before installing the application",
+            "categories": [
+                "BillingAdmin Logs"
+            ],
+            "platform": "linux",
+            "logo": "https://git.portaone.com:29999/public/portainer/raw/branch/master/app/BALogsSupervisor/BALogsSupervisor_logo.png",
+            "repository": {
+                "url": "https://github.com/porta-support/portainer",
+                "stackfile": "app/BALogsSupervisor/docker-stack.yml"
+            },
+            "env": [
+                {
+                    "name": "ES_NODES",
+                    "label": "Elasticsearch Node",
+                    "description": "Elasticsearch master node for a site in the format '<IP_ADDR>:<PORT>'"
+                }
+            ]
         }
     ]
 }
