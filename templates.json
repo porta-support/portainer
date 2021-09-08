@@ -116,6 +116,40 @@
                     "default": "60"
                 }
             ]
+        },
+        {
+            "type": 2,
+            "title": "BALogsExporter",
+            "description": "Service for collecting logs from BillingAdmin node and saving them in the Elasticsearch",
+            "note": "Please complete all the mandatory fields (like 'Elasticsearch Node') before installing the application",
+            "categories": [
+                "BillingAdmin Logs"
+            ],
+            "platform": "linux",
+            "logo": "https://raw.githubusercontent.com/porta-support/portainer/main/app/BALogsSupervisor/BALogsExporter_logo.png",
+            "repository": {
+                "url": "https://github.com/porta-support/portainer",
+                "stackfile": "app/BALogsSupervisor/docker-stack.yml"
+            },
+            "env": [
+                {
+                    "name": "ES_NODES",
+                    "label": "Elasticsearch Node",
+                    "description": "Elasticsearch master node (in the format '<IP_ADDR>:<PORT>'), where logs will be saved"
+                },
+                {
+                    "name": "HOST_INSTANCE_LOGS_IP",
+                    "label": " after N days",
+                    "description": "Collect logs from PortaAdmin instance with provided service IP",
+                    "description": "PortaAdmin instance IP, where current service should be installed to collect/save logs",
+                },
+                {
+                    "name": "EXPORTER_PROCESSING_TIMEOUT_SEC",
+                    "label": "Processing timeout (seconds)",
+                    "description": "Try to collect/save logs every N seconds",
+                    "default": "60"
+                }
+            ]
         }
     ]
 }
