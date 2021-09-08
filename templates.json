@@ -146,7 +146,7 @@
                     "name": "EXPORTER_PROCESSING_TIMEOUT_SEC",
                     "label": "Processing timeout (seconds)",
                     "description": "Try to collect/save logs every N seconds",
-                    "default": "60"
+                    "default": "60",
                 }
             ]
         }
