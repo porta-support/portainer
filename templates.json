@@ -140,8 +140,7 @@
                 {
                     "name": "HOST_INSTANCE_LOGS_IP",
                     "label": " after N days",
-                    "description": "Collect logs from PortaAdmin instance with provided service IP",
-                    "description": "PortaAdmin instance IP, where current service should be installed to collect/save logs",
+                    "description": "PortaAdmin instance service IP, where current service should be installed to collect/save logs"
                 },
                 {
                     "name": "EXPORTER_PROCESSING_TIMEOUT_SEC",
