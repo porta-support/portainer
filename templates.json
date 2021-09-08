@@ -135,7 +135,7 @@
                 {
                     "name": "ES_NODES",
                     "label": "Elasticsearch Node",
-                    "description": "Elasticsearch master node (in the format '<IP_ADDR>:<PORT>'), where logs will be saved"
+                    "description": "Site master node of the Elasticsearch (in the format '<IP_ADDR>:<PORT>'), where logs will be saved"
                 },
                 {
                     "name": "HOST_INSTANCE_LOGS_IP",
