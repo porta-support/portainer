@@ -110,7 +110,7 @@
                     "default": "50"
                 },
                 {
-                    "name": "PROCESSING_TIMEOUT",
+                    "name": "SUPERVISOR_PROCESSING_TIMEOUT_MIN",
                     "label": "Processing timeout (minutes)",
                     "description": "Try to delete/reindex logs every N minutes",
                     "default": "60"

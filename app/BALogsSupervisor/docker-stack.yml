@@ -11,7 +11,7 @@ services:
     environment:
       ES_NODES: ${ES_NODES}
       LOGS_CLEANUP_DAYS: ${LOGS_CLEANUP_DAYS}
-      PROCESSING_TIMEOUT: ${PROCESSING_TIMEOUT}
+      SUPERVISOR_PROCESSING_TIMEOUT_MIN: ${SUPERVISOR_PROCESSING_TIMEOUT_MIN}
     deploy:
       mode: replicated
       replicas: 1
