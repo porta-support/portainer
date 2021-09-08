@@ -126,7 +126,7 @@
                 "BillingAdmin Logs"
             ],
             "platform": "linux",
-            "logo": "https://raw.githubusercontent.com/porta-support/portainer/main/app/BALogsSupervisor/BALogsExporter_logo.png",
+            "logo": "https://raw.githubusercontent.com/porta-support/portainer/main/app/BALogsExporter/BALogsExporter_logo.png",
             "repository": {
                 "url": "https://github.com/porta-support/portainer",
                 "stackfile": "app/BALogsSupervisor/docker-stack.yml"
