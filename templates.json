@@ -119,7 +119,7 @@
         },
         {
             "type": 2,
-            "title": "BALogsExporter2",
+            "title": "BALogsExporter",
             "description": "Service for collecting logs from BillingAdmin node and saving them in the Elasticsearch",
             "note": "Please complete all the mandatory fields (like 'Elasticsearch Node') before installing the application",
             "categories": [
@@ -146,7 +146,7 @@
                     "name": "EXPORTER_PROCESSING_TIMEOUT_SEC",
                     "label": "Processing timeout (seconds)",
                     "description": "Try to collect/save logs every N seconds",
-                    "default": "10"
+                    "default": "60"
                 }
             ]
         }
