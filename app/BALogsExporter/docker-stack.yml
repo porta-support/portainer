@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   ba-logs-ui:
-    image: dotersojet/shared_images:tagname
+    image: registry.portaone.com/porta-portainer-store/ba-logs-exporter:latest-prod
     healthcheck:
       test: "cd /app && perl processor_health_check.pl"
       interval: 1m
