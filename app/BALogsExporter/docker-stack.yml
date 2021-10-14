@@ -12,6 +12,7 @@ services:
       ES_NODES: ${ES_NODES}
       HOST_INSTANCE_LOGS_IP: ${HOST_INSTANCE_LOGS_IP}
       EXPORTER_PROCESSING_TIMEOUT_SEC: ${EXPORTER_PROCESSING_TIMEOUT_SEC}
+      TEST_ENV: ${TEST_ENV}
     deploy:
       mode: replicated
       replicas: 1

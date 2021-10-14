@@ -147,6 +147,12 @@
                     "label": "Processing timeout (seconds)",
                     "description": "Try to collect/save logs every N seconds",
                     "default": "60"
+                },
+                {
+                    "name": "TEST_ENV",
+                    "label": "test substitution only",
+                    "description": "  test desc ",
+                    "default": " "
                 }
             ]
         }
