@@ -9,10 +9,10 @@
                 "Data Analyze"
             ],
             "platform": "linux",
-            "logo": "https://git.portaone.com:29999/public/portainer/raw/branch/master/app/PortaBI/PortaBI_logo.png",
+            "logo": "https://git.portaone.com:29999/public/portainer/raw/branch/master/porta_default_app_logo.png",
             "repository": {
-                "url": "https://github.com/porta-support/portainer",
-                "stackfile": "app/PortaBI/docker-stack.yml"
+                "url": "https://git.portaone.com:29999/public/portainer",
+                "stackfile": "prod/app/PortaBI/docker-stack.yml"
             },
             "env": [
                 {
@@ -48,7 +48,7 @@
                 {
                     "name": "I_ENV",
                     "label": "PB Environment ID",
-                    "description": "Porta Billing Env ID assosiated with the current service"
+                    "description": "Porta Billing Env ID associated with the current service"
                 },
                 {
                     "name": "SSH_KEY",
@@ -70,10 +70,10 @@
                 "BillingAdmin Logs"
             ],
             "platform": "linux",
-            "logo": "https://git.portaone.com:29999/public/portainer/raw/branch/master/app/BALogsUI/BALogsUI_logo.png",
+            "logo": "https://git.portaone.com:29999/public/portainer/raw/branch/master/porta_default_app_logo.png",
             "repository": {
-                "url": "https://github.com/porta-support/portainer",
-                "stackfile": "app/BALogsUI/docker-stack.yml"
+                "url": "https://git.portaone.com:29999/public/portainer",
+                "stackfile": "prod/app/BALogsUI/docker-stack.yml"
             },
             "env": [
                 {
@@ -86,27 +86,27 @@
         {
             "type": 2,
             "title": "BALogsSupervisor",
-            "description": "Service for reindexing and removing old BillingAdmin logs, stored in the Elasticsearch",
+            "description": "The service for reindexing and removing old BillingAdmin logs stored in the Elasticsearch",
             "note": "Please complete all the mandatory fields (like 'Elasticsearch Node') before installing the application",
             "categories": [
                 "BillingAdmin Logs"
             ],
             "platform": "linux",
-            "logo": "https://raw.githubusercontent.com/porta-support/portainer/main/app/BALogsSupervisor/BALogsSupervisor_logo.png",
+            "logo": "https://git.portaone.com:29999/public/portainer/raw/branch/master/porta_default_app_logo.png",
             "repository": {
-                "url": "https://github.com/porta-support/portainer",
-                "stackfile": "app/BALogsSupervisor/docker-stack.yml"
+                "url": "https://git.portaone.com:29999/public/portainer",
+                "stackfile": "prod/app/BALogsSupervisor/docker-stack.yml"
             },
             "env": [
                 {
                     "name": "ES_NODES",
                     "label": "Elasticsearch Node",
-                    "description": "Elasticsearch master node for a site in the format '<IP_ADDR>:<PORT>'"
+                    "description": "The Elasticsearch master node (in the format '<IP_ADDR>:<PORT>') where logs will be saved"
                 },
                 {
                     "name": "LOGS_CLEANUP_DAYS",
-                    "label": "Cleanup after N days",
-                    "description": "Delete logs which were saved more than N days ago",
+                    "label": "Logs cleanup days",
+                    "description": "Delete logs that were saved more than N days ago",
                     "default": "50"
                 },
                 {
@@ -120,27 +120,27 @@
         {
             "type": 2,
             "title": "BALogsExporter",
-            "description": "Service for collecting logs from BillingAdmin node and saving them in the Elasticsearch",
+            "description": "The service for collecting logs from a BillingAdmin node and saving them in the Elasticsearch",
             "note": "Please complete all the mandatory fields (like 'Elasticsearch Node') before installing the application",
             "categories": [
                 "BillingAdmin Logs"
             ],
             "platform": "linux",
-            "logo": "https://raw.githubusercontent.com/porta-support/portainer/main/app/BALogsExporter/BALogsExporter_logo.png",
+            "logo": "https://git.portaone.com:29999/public/portainer/raw/branch/master/porta_default_app_logo.png",
             "repository": {
-                "url": "https://github.com/porta-support/portainer",
-                "stackfile": "app/BALogsExporter/docker-stack.yml"
+                "url": "https://git.portaone.com:29999/public/portainer",
+                "stackfile": "prod/app/BALogsExporter/docker-stack.yml"
             },
             "env": [
                 {
                     "name": "ES_NODES",
                     "label": "Elasticsearch Node",
-                    "description": "Site master node of the Elasticsearch (in the format '<IP_ADDR>:<PORT>'), where logs will be saved"
+                    "description": " The Elasticsearch master node (in the format '<IP_ADDR>:<PORT>') where logs will be saved"
                 },
                 {
                     "name": "HOST_INSTANCE_LOGS_IP",
                     "label": "PortaAdmin IP",
-                    "description": "PortaAdmin instance service IP, where current service should be installed to collect/save logs"
+                    "description": "The PortaAdmin instance service IP where the current service should be installed to collect/save logs"
                 },
                 {
                     "name": "EXPORTER_PROCESSING_TIMEOUT_SEC",
