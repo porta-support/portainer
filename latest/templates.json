@@ -9,9 +9,9 @@
                 "Data Analyze"
             ],
             "platform": "linux",
-            "logo": "https://git.portaone.com:29999/public/portainer/raw/branch/master/porta_default_app_logo.png",
+            "logo": "https://github.com/porta-support/portainer/raw/branch/master/porta_default_app_logo.png",
             "repository": {
-                "url": "https://git.portaone.com:29999/public/portainer",
+                "url": "https://github.com/porta-support/portainer",
                 "stackfile": "latest/app/PortaBI/docker-stack.yml"
             },
             "env": [
@@ -70,9 +70,9 @@
                 "BillingAdmin Logs"
             ],
             "platform": "linux",
-            "logo": "https://git.portaone.com:29999/public/portainer/raw/branch/master/porta_default_app_logo.png",
+            "logo": "https://github.com/porta-support/portainer/raw/branch/master/porta_default_app_logo.png",
             "repository": {
-                "url": "https://git.portaone.com:29999/public/portainer",
+                "url": "https://github.com/porta-support/portainer",
                 "stackfile": "latest/app/BALogsUI/docker-stack.yml"
             },
             "env": [
@@ -107,9 +107,9 @@
                 "BillingAdmin Logs"
             ],
             "platform": "linux",
-            "logo": "https://git.portaone.com:29999/public/portainer/raw/branch/master/porta_default_app_logo.png",
+            "logo": "https://github.com/porta-support/portainer/raw/branch/master/porta_default_app_logo.png",
             "repository": {
-                "url": "https://git.portaone.com:29999/public/portainer",
+                "url": "https://github.com/porta-support/portainer",
                 "stackfile": "latest/app/BALogsSupervisor/docker-stack.yml"
             },
             "env": [
@@ -141,9 +141,9 @@
                 "BillingAdmin Logs"
             ],
             "platform": "linux",
-            "logo": "https://git.portaone.com:29999/public/portainer/raw/branch/master/porta_default_app_logo.png",
+            "logo": "https://github.com/porta-support/portainer/raw/branch/master/porta_default_app_logo.png",
             "repository": {
-                "url": "https://git.portaone.com:29999/public/portainer",
+                "url": "https://github.com/porta-support/portainer",
                 "stackfile": "latest/app/BALogsExporter/docker-stack.yml"
             },
             "env": [
