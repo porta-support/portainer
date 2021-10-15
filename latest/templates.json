@@ -63,7 +63,7 @@
         },
         {
             "type": 2,
-            "title": "BALogsUI",
+            "title": "BALogsUI22",
             "description": "Grafana interface (an open source analytics & monitoring solution providing easy access (search, download) to the BillingAdmin logs)",
             "note": "Please complete all the fields (like 'Elasticsearch URL') before installing the application",
             "categories": [
@@ -72,7 +72,7 @@
             "platform": "linux",
             "logo": "https://github.com/porta-support/portainer/raw/main/porta_default_app_logo.png",
             "repository": {
-                "url": "https://github.com/porta-support/portainer",
+                "url": "https://github.com/porta-support/portainer.git",
                 "stackfile": "latest/app/BALogsUI/docker-stack.yml"
             },
             "env": [
