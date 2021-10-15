@@ -72,7 +72,7 @@
             "platform": "linux",
             "logo": "https://github.com/porta-support/portainer/raw/main/porta_default_app_logo.png",
             "repository": {
-                "url": "https://github.com/porta-support/portainer.git",
+                "url": "https://github.com/porta-support/portainer/",
                 "stackfile": "latest/app/BALogsUI/docker-stack.yml"
             },
             "env": [
