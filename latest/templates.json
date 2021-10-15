@@ -9,7 +9,7 @@
                 "Data Analyze"
             ],
             "platform": "linux",
-            "logo": "https://github.com/porta-support/portainer/raw/branch/master/porta_default_app_logo.png",
+            "logo": "https://github.com/porta-support/portainer/raw/master/porta_default_app_logo.png",
             "repository": {
                 "url": "https://github.com/porta-support/portainer",
                 "stackfile": "latest/app/PortaBI/docker-stack.yml"
@@ -70,7 +70,7 @@
                 "BillingAdmin Logs"
             ],
             "platform": "linux",
-            "logo": "https://github.com/porta-support/portainer/raw/branch/master/porta_default_app_logo.png",
+            "logo": "https://github.com/porta-support/portainer/raw/master/porta_default_app_logo.png",
             "repository": {
                 "url": "https://github.com/porta-support/portainer",
                 "stackfile": "latest/app/BALogsUI/docker-stack.yml"
@@ -107,7 +107,7 @@
                 "BillingAdmin Logs"
             ],
             "platform": "linux",
-            "logo": "https://github.com/porta-support/portainer/raw/branch/master/porta_default_app_logo.png",
+            "logo": "https://github.com/porta-support/portainer/raw/master/porta_default_app_logo.png",
             "repository": {
                 "url": "https://github.com/porta-support/portainer",
                 "stackfile": "latest/app/BALogsSupervisor/docker-stack.yml"
@@ -141,7 +141,7 @@
                 "BillingAdmin Logs"
             ],
             "platform": "linux",
-            "logo": "https://github.com/porta-support/portainer/raw/branch/master/porta_default_app_logo.png",
+            "logo": "https://github.com/porta-support/portainer/raw/master/porta_default_app_logo.png",
             "repository": {
                 "url": "https://github.com/porta-support/portainer",
                 "stackfile": "latest/app/BALogsExporter/docker-stack.yml"
