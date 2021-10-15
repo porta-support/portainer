@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   ba-logs-ui:
-    image: registry.portaone.com/porta-portainer-store/ba-logs-exporter:latest-prod
+    image: registry.portaone.com/porta-common/ba-logs-exporter:latest
     healthcheck:
       test: "cd /app && perl processor_health_check.pl"
       interval: 1m
@@ -12,12 +12,12 @@ services:
       ES_NODES: ${ES_NODES}
       HOST_INSTANCE_LOGS_IP: ${HOST_INSTANCE_LOGS_IP}
       EXPORTER_PROCESSING_TIMEOUT_SEC: ${EXPORTER_PROCESSING_TIMEOUT_SEC}
-      TEST_ENV: ${TEST_ENV}
     deploy:
       mode: replicated
       replicas: 1
       placement:
         constraints: [node.labels.node_name.PortaAdmin == true]
+        max_replicas_per_node: 1
     logging:
       driver: local
     volumes:

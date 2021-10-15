@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   ba-logs-ui:
-    image: registry.portaone.com/porta-portainer-store/ba-logs-es-supervisor:latest-prod
+    image: registry.portaone.com/porta-common/ba-logs-es-supervisor:latest
     healthcheck:
       test: "cd /app && perl processor_health_check.pl"
       interval: 1m

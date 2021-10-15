@@ -1,0 +1,21 @@
+version: '3.3'
+
+services:
+  ba-logs-ui:
+    image: registry.portaone.com/porta-common/ba-logs-es-supervisor:prod
+    healthcheck:
+      test: "cd /app && perl processor_health_check.pl"
+      interval: 1m
+      timeout: 5s
+      retries: 10
+    environment:
+      ES_NODES: ${ES_NODES}
+      LOGS_CLEANUP_DAYS: ${LOGS_CLEANUP_DAYS}
+      SUPERVISOR_PROCESSING_TIMEOUT_MIN: ${SUPERVISOR_PROCESSING_TIMEOUT_MIN}
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints: [node.labels.node_name.Elasticsearch == true]
+    logging:
+      driver: local
