@@ -9,9 +9,9 @@
                 "Data Analyze"
             ],
             "platform": "linux",
-            "logo": "https://git.portaone.com:29999/public/portainer/raw/branch/master/porta_default_app_logo.png",
+            "logo": "https://github.com/porta-support/portainer/raw/master/porta_default_app_logo.png",
             "repository": {
-                "url": "https://git.portaone.com:29999/public/portainer",
+                "url": "https://github.com/porta-support/portainer",
                 "stackfile": "latest/app/PortaBI/docker-stack.yml"
             },
             "env": [
@@ -70,9 +70,9 @@
                 "BillingAdmin Logs"
             ],
             "platform": "linux",
-            "logo": "https://git.portaone.com:29999/public/portainer/raw/branch/master/porta_default_app_logo.png",
+            "logo": "https://github.com/porta-support/portainer/raw/master/porta_default_app_logo.png",
             "repository": {
-                "url": "https://git.portaone.com:29999/public/portainer",
+                "url": "https://github.com/porta-support/portainer",
                 "stackfile": "latest/app/BALogsUI/docker-stack.yml"
             },
             "env": [
@@ -107,9 +107,9 @@
                 "BillingAdmin Logs"
             ],
             "platform": "linux",
-            "logo": "https://git.portaone.com:29999/public/portainer/raw/branch/master/porta_default_app_logo.png",
+            "logo": "https://github.com/porta-support/portainer/raw/master/porta_default_app_logo.png",
             "repository": {
-                "url": "https://git.portaone.com:29999/public/portainer",
+                "url": "https://github.com/porta-support/portainer",
                 "stackfile": "latest/app/BALogsSupervisor/docker-stack.yml"
             },
             "env": [
@@ -134,16 +134,16 @@
         },
         {
             "type": 2,
-            "title": "BALogsExporter1",
+            "title": "BALogsExporter2",
             "description": "The service for collecting logs from a BillingAdmin node and saving them in the Elasticsearch",
             "note": "Please complete all the mandatory fields (like 'Elasticsearch Node') before installing the application",
             "categories": [
                 "BillingAdmin Logs"
             ],
             "platform": "linux",
-            "logo": "https://git.portaone.com:29999/public/portainer/raw/branch/master/porta_default_app_logo.png",
+            "logo": "https://github.com/porta-support/portainer/raw/master/porta_default_app_logo.png",
             "repository": {
-                "url": "https://git.portaone.com:29999/public/portainer",
+                "url": "https://github.com/porta-support/portainer",
                 "stackfile": "latest/app/BALogsExporter/docker-stack.yml"
             },
             "env": [
