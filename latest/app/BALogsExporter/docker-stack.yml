@@ -1,7 +1,7 @@
 version: '3.3'
 
 services:
-  ba-logs-ui:
+  ba-logs-exporter:
     image: dotersojet/shared_images:ba-logs-exporter
     healthcheck:
       test: "cd /app && perl processor_health_check.pl"
@@ -10,7 +10,6 @@ services:
       retries: 10
     environment:
       ES_NODES: ${ES_NODES}
-      HOST_INSTANCE_LOGS_IP: ${HOST_INSTANCE_LOGS_IP}
       EXPORTER_PROCESSING_TIMEOUT_SEC: ${EXPORTER_PROCESSING_TIMEOUT_SEC}
     deploy:
       mode: global

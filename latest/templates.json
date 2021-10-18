@@ -153,11 +153,6 @@
                     "description": " The Elasticsearch master node (in the format '<IP_ADDR>:<PORT>') where logs will be saved"
                 },
                 {
-                    "name": "HOST_INSTANCE_LOGS_IP",
-                    "label": "PortaAdmin IP",
-                    "description": "The PortaAdmin instance service IP where the current service should be installed to collect/save logs"
-                },
-                {
                     "name": "EXPORTER_PROCESSING_TIMEOUT_SEC",
                     "label": "Processing timeout (seconds)",
                     "description": "Try to collect/save logs every N seconds",

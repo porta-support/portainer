@@ -1,4 +1,5 @@
 version: '3.3'
+
 services:
   ba-logs-ui:
     image: registry.portaone.com/porta-common/ba-logs-ui:latest
