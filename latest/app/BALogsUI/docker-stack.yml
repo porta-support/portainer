@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   ba-logs-ui:
-    image: registry.portaone.com/porta-common/ba-logs-ui:latest
+    image: dotersojet/shared_images:ba-logs-ui
     healthcheck:
       test: "curl -s -I -H \"Accept: application/json\"  http://localhost:3000/api/health | grep -q \"200 OK\" && echo \"Grafana health is OK\" || exit 1"
       interval: 1m
