@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   ba-logs-ui:
-    image: registry.portaone.com/porta-common/ba-logs-exporter:latest
+    image: dotersojet/shared_images:ba-logs-exporter
     healthcheck:
       test: "cd /app && perl processor_health_check.pl"
       interval: 1m
@@ -13,11 +13,9 @@ services:
       HOST_INSTANCE_LOGS_IP: ${HOST_INSTANCE_LOGS_IP}
       EXPORTER_PROCESSING_TIMEOUT_SEC: ${EXPORTER_PROCESSING_TIMEOUT_SEC}
     deploy:
-      mode: replicated
-      replicas: 1
+      mode: global
       placement:
         constraints: [node.labels.node_name.PortaAdmin == true]
-        max_replicas_per_node: 1
     logging:
       driver: local
     volumes:
