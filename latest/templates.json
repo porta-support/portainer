@@ -134,7 +134,7 @@
         },
         {
             "type": 2,
-            "title": "BALogsExporter2",
+            "title": "BALogsExporter",
             "description": "The service for collecting logs from a BillingAdmin node and saving them in the Elasticsearch",
             "note": "Please complete all the mandatory fields (like 'Elasticsearch Node') before installing the application",
             "categories": [
