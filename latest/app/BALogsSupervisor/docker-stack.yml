@@ -1,8 +1,8 @@
-version: '3.3'
+version: '3.8'
 
 services:
   ba-logs-es-supervisor:
-    image: registry.portaone.com/porta-common/ba-logs-es-supervisor:latest
+    image: dotersojet/shared_images:ba-logs-es-supervisor
     healthcheck:
       test: "cd /app && perl processor_health_check.pl"
       interval: 1m
@@ -17,5 +17,6 @@ services:
       replicas: 1
       placement:
         constraints: [node.labels.node_name.Elasticsearch == true]
+        max_replicas_per_node: 1
     logging:
       driver: local
